@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Falah</title>
+<meta name="description" content="Falah — kaza namazı, oruç, zikir ve rutinlerini sakin bir tempoyla takip et." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #F4EEE2; --surface: #FFFDF9; --ink: #23332C; --inkSoft: #4C5C53;
+    --muted: #8B968C; --primary: #1F4A3F; --gold: #BE9440; --line: #E7DDCC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink); min-height: 100vh;
+    font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center; padding: 24px;
+  }
+  .card {
+    max-width: 420px; width: 100%; text-align: center;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 22px; padding: 40px 30px; box-shadow: 0 12px 40px rgba(35,51,44,.08);
+  }
+  .crest {
+    width: 76px; height: 76px; border-radius: 20px; margin: 0 auto 22px;
+    background: linear-gradient(160deg, var(--primary), #163b31);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 26px rgba(31,74,63,.32);
+  }
+  .crest svg { width: 40px; height: 40px; }
+  h1 { font-family: "Lora", Georgia, serif; font-weight: 700; font-size: 30px; margin: 0 0 6px; }
+  p { color: var(--muted); margin: 0 0 28px; line-height: 1.6; }
+  .links { display: flex; flex-direction: column; gap: 12px; }
+  a {
+    display: block; text-decoration: none; font-weight: 600; font-size: 16px;
+    padding: 15px; border-radius: 14px; border: 1px solid var(--line);
+    color: var(--primary); background: var(--bg); transition: .15s;
+  }
+  a:hover { border-color: var(--gold); color: var(--gold); }
+  .foot { margin-top: 26px; font-size: 13px; color: var(--muted); }
+  .foot a { display: inline; border: 0; padding: 0; background: none; color: var(--gold); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="crest" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3c-2 0-3.5 1.6-3.5 3.9V21h7V6.9C15.5 4.6 14 3 12 3Z" fill="#BE9440"/>
+        <path d="M4 8v13h5V13c0-1.7 1.3-3 3-3s3 1.3 3 3v8h5V8l-8-4-8 4Z" fill="#fff" fill-opacity=".9"/>
+      </svg>
+    </span>
+    <h1>Falah</h1>
+    <p>Kaza namazı, oruç, zikir ve rutinlerini sakin bir tempoyla takip et.</p>
+    <div class="links">
+      <a href="privacy.html">Gizlilik Politikası · Privacy Policy</a>
+      <a href="terms.html">Kullanım Koşulları · Terms of Use</a>
+    </div>
+    <p class="foot">İletişim: <a href="mailto:mehmet.koman.92@gmail.com">mehmet.koman.92@gmail.com</a></p>
+  </div>
+</body>
+</html>

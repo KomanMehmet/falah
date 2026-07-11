@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gizlilik Politikası — Falah</title>
+<meta name="description" content="Falah gizlilik politikası. Kişisel veri toplamıyoruz; tüm veriler yalnızca cihazında saklanır." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #F4EEE2; --surface: #FFFDF9; --ink: #23332C; --inkSoft: #4C5C53;
+    --muted: #8B968C; --primary: #1F4A3F; --primaryTint: #E6EFE9;
+    --gold: #BE9440; --goldTint: #F6EEDB; --line: #E7DDCC;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    line-height: 1.65; font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 72px; }
+  header { display: flex; align-items: center; gap: 14px; padding-bottom: 22px; }
+  .crest {
+    width: 52px; height: 52px; border-radius: 14px; flex: none;
+    background: linear-gradient(160deg, var(--primary), #163b31);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 18px rgba(31,74,63,.28);
+  }
+  .crest svg { width: 28px; height: 28px; }
+  .brand { font-family: "Lora", Georgia, serif; font-weight: 700; font-size: 20px; letter-spacing: .2px; }
+  .brand small { display: block; font-family: inherit; font-weight: 500; font-size: 12.5px; color: var(--muted); letter-spacing: .3px; }
+  h1 {
+    font-family: "Lora", Georgia, serif; font-weight: 700;
+    font-size: clamp(28px, 6vw, 36px); line-height: 1.2; margin: 6px 0 4px; text-wrap: balance;
+  }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 26px; }
+  .toggle { display: inline-flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-bottom: 30px; }
+  .toggle button {
+    font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+    border: 0; background: transparent; color: var(--inkSoft);
+    padding: 7px 18px; border-radius: 999px; transition: .15s;
+  }
+  .toggle button[aria-selected="true"] { background: var(--primary); color: #fff; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 18px; padding: 26px 24px; box-shadow: 0 1px 0 rgba(35,51,44,.03);
+  }
+  h2 {
+    font-family: "Lora", Georgia, serif; font-weight: 600; font-size: 20px;
+    margin: 30px 0 8px; color: var(--primary);
+  }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 14px; color: var(--inkSoft); }
+  strong { color: var(--ink); }
+  ul { margin: 0 0 14px; padding-left: 20px; color: var(--inkSoft); }
+  li { margin-bottom: 6px; }
+  a { color: var(--gold); font-weight: 600; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .lang { display: none; }
+  .lang.on { display: block; }
+  footer { margin-top: 34px; text-align: center; color: var(--muted); font-size: 13.5px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="crest" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3c-2 0-3.5 1.6-3.5 3.9V21h7V6.9C15.5 4.6 14 3 12 3Z" fill="#BE9440"/>
+        <path d="M4 8v13h5V13c0-1.7 1.3-3 3-3s3 1.3 3 3v8h5V8l-8-4-8 4Z" fill="#fff" fill-opacity=".9"/>
+      </svg>
+    </span>
+    <span class="brand">Falah<small>Gizlilik · Privacy</small></span>
+  </header>
+
+  <h1 id="title">Gizlilik Politikası</h1>
+  <p class="updated" id="updated">Son güncelleme: 11 Temmuz 2026</p>
+
+  <div class="toggle" role="tablist" aria-label="Dil / Language">
+    <button role="tab" aria-selected="true" data-lang="tr" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button role="tab" aria-selected="false" data-lang="en" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+
+  <div class="card">
+    <!-- TR -->
+    <section class="lang on" data-lang="tr">
+      <p><strong>Falah</strong> olarak gizliliğine değer veriyoruz. Bu politika, uygulamanın hangi verileri işlediğini açıklar.</p>
+
+      <h2>Topladığımız veriler</h2>
+      <p><strong>Hiçbir kişisel veri toplamıyoruz.</strong> Falah:</p>
+      <ul>
+        <li>Hesap açmanı gerektirmez.</li>
+        <li>İnternet bağlantısı gerektirmez.</li>
+        <li>Adını, e-postanı, konumunu veya cihaz kimliğini toplamaz.</li>
+        <li>Reklam ağı, analitik veya üçüncü taraf izleme aracı içermez.</li>
+      </ul>
+
+      <h2>Verilerin nerede saklanır?</h2>
+      <p>Girdiğin tüm bilgiler (kaza sayıları, oruç, zikir, rutin, notlar, ayarlar) <strong>yalnızca senin cihazında, yerel depolamada</strong> tutulur. Bu veriler bize veya başka bir sunucuya <strong>gönderilmez</strong>. Uygulamayı silersen bu veriler de silinir.</p>
+
+      <h2>Bildirimler</h2>
+      <p>Kurduğun hatırlatıcılar cihazında yerel olarak planlanır. Bunun için bildirim iznini istiyoruz; bu izin yalnızca hatırlatma göstermek için kullanılır.</p>
+
+      <h2>Satın alımlar</h2>
+      <p>Uygulama içi abonelikler Google Play üzerinden işlenir. Ödeme bilgilerin bize ulaşmaz; Google’ın gizlilik politikası geçerlidir.</p>
+
+      <h2>Çocukların gizliliği</h2>
+      <p>Uygulama kişisel veri toplamadığı için her yaşa uygundur.</p>
+
+      <h2>Değişiklikler</h2>
+      <p>Bu politikayı zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayınlanır.</p>
+
+      <h2>İletişim</h2>
+      <p>Soruların için: <a href="mailto:mehmet.koman.92@gmail.com">mehmet.koman.92@gmail.com</a></p>
+    </section>
+
+    <!-- EN -->
+    <section class="lang" data-lang="en">
+      <p>At <strong>Falah</strong>, we respect your privacy. This policy explains what data the app processes.</p>
+
+      <h2>Data we collect</h2>
+      <p><strong>We collect no personal data.</strong> Falah:</p>
+      <ul>
+        <li>Does not require an account.</li>
+        <li>Does not require an internet connection.</li>
+        <li>Does not collect your name, email, location, or device identifiers.</li>
+        <li>Contains no ad networks, analytics, or third-party tracking.</li>
+      </ul>
+
+      <h2>Where your data is stored</h2>
+      <p>Everything you enter (prayer counts, fasts, dhikr, routines, notes, settings) is stored <strong>only on your device, in local storage.</strong> This data is <strong>never sent</strong> to us or any server. Uninstalling the app deletes this data.</p>
+
+      <h2>Notifications</h2>
+      <p>Reminders you set are scheduled locally on your device. We request notification permission solely to show these reminders.</p>
+
+      <h2>Purchases</h2>
+      <p>In-app subscriptions are processed through Google Play. Your payment details do not reach us; Google’s privacy policy applies.</p>
+
+      <h2>Children’s privacy</h2>
+      <p>Because the app collects no personal data, it is suitable for all ages.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy from time to time. The current version is always published on this page.</p>
+
+      <h2>Contact</h2>
+      <p>Questions: <a href="mailto:mehmet.koman.92@gmail.com">mehmet.koman.92@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <a href="terms.html">Kullanım Koşulları · Terms of Use</a>
+  </footer>
+</div>
+
+<script>
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('.lang').forEach(s => s.classList.toggle('on', s.dataset.lang === l));
+    document.querySelectorAll('.toggle button').forEach(b => b.setAttribute('aria-selected', b.dataset.lang === l));
+    document.getElementById('title').textContent = l === 'tr' ? 'Gizlilik Politikası' : 'Privacy Policy';
+    document.getElementById('updated').textContent = l === 'tr' ? 'Son güncelleme: 11 Temmuz 2026' : 'Last updated: 11 July 2026';
+  }
+</script>
+</body>
+</html>

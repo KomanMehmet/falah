@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kullanım Koşulları — Falah</title>
+<meta name="description" content="Falah kullanım koşulları: lisans, abonelikler, sorumluluk reddi." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #F4EEE2; --surface: #FFFDF9; --ink: #23332C; --inkSoft: #4C5C53;
+    --muted: #8B968C; --primary: #1F4A3F; --primaryTint: #E6EFE9;
+    --gold: #BE9440; --goldTint: #F6EEDB; --line: #E7DDCC;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    line-height: 1.65; font-size: 17px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 72px; }
+  header { display: flex; align-items: center; gap: 14px; padding-bottom: 22px; }
+  .crest {
+    width: 52px; height: 52px; border-radius: 14px; flex: none;
+    background: linear-gradient(160deg, var(--primary), #163b31);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 18px rgba(31,74,63,.28);
+  }
+  .crest svg { width: 28px; height: 28px; }
+  .brand { font-family: "Lora", Georgia, serif; font-weight: 700; font-size: 20px; letter-spacing: .2px; }
+  .brand small { display: block; font-family: inherit; font-weight: 500; font-size: 12.5px; color: var(--muted); letter-spacing: .3px; }
+  h1 {
+    font-family: "Lora", Georgia, serif; font-weight: 700;
+    font-size: clamp(28px, 6vw, 36px); line-height: 1.2; margin: 6px 0 4px; text-wrap: balance;
+  }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 26px; }
+  .toggle { display: inline-flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px; margin-bottom: 30px; }
+  .toggle button {
+    font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+    border: 0; background: transparent; color: var(--inkSoft);
+    padding: 7px 18px; border-radius: 999px; transition: .15s;
+  }
+  .toggle button[aria-selected="true"] { background: var(--primary); color: #fff; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 18px; padding: 26px 24px; box-shadow: 0 1px 0 rgba(35,51,44,.03);
+  }
+  h2 {
+    font-family: "Lora", Georgia, serif; font-weight: 600; font-size: 20px;
+    margin: 30px 0 8px; color: var(--primary);
+  }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 14px; color: var(--inkSoft); }
+  strong { color: var(--ink); }
+  ul { margin: 0 0 14px; padding-left: 20px; color: var(--inkSoft); }
+  li { margin-bottom: 6px; }
+  a { color: var(--gold); font-weight: 600; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .note { background: var(--goldTint); border: 1px solid #E9D9AE; border-radius: 14px; padding: 16px 18px; margin: 6px 0 14px; }
+  .note p { color: #6b5a2e; margin: 0; }
+  .lang { display: none; }
+  .lang.on { display: block; }
+  footer { margin-top: 34px; text-align: center; color: var(--muted); font-size: 13.5px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="crest" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3c-2 0-3.5 1.6-3.5 3.9V21h7V6.9C15.5 4.6 14 3 12 3Z" fill="#BE9440"/>
+        <path d="M4 8v13h5V13c0-1.7 1.3-3 3-3s3 1.3 3 3v8h5V8l-8-4-8 4Z" fill="#fff" fill-opacity=".9"/>
+      </svg>
+    </span>
+    <span class="brand">Falah<small>Koşullar · Terms</small></span>
+  </header>
+
+  <h1 id="title">Kullanım Koşulları</h1>
+  <p class="updated" id="updated">Son güncelleme: 11 Temmuz 2026</p>
+
+  <div class="toggle" role="tablist" aria-label="Dil / Language">
+    <button role="tab" aria-selected="true" data-lang="tr" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button role="tab" aria-selected="false" data-lang="en" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+
+  <div class="card">
+    <!-- TR -->
+    <section class="lang on" data-lang="tr">
+      <p>Falah’ni (“uygulama”) kullanarak aşağıdaki koşulları kabul etmiş olursun. Kabul etmiyorsan lütfen uygulamayı kullanma.</p>
+
+      <h2>1. Hizmet</h2>
+      <p>Falah; kaza namazı, oruç, zikir, rutin ve notlarını takip etmene yardımcı olan kişisel bir ibadet defteridir. Uygulama çevrimdışı çalışır ve verilerini yalnızca cihazında tutar.</p>
+
+      <h2>2. Kullanım lisansı</h2>
+      <p>Sana, uygulamayı kişisel ve ticari olmayan amaçlarla kullanman için sınırlı, devredilemez bir lisans veriyoruz. Uygulamayı kopyalayamaz, tersine mühendislik yapamaz veya yeniden satamazsın.</p>
+
+      <h2>3. Dinî içerik hakkında</h2>
+      <div class="note">
+        <p><strong>Önemli:</strong> Kaza hesaplama sihirbazı ve uygulamadaki sayılar yalnızca <strong>kişisel takip ve bilgilendirme</strong> amaçlıdır; bir <strong>fetva veya kesin dinî hüküm değildir</strong>. Kaza borcun, mezhebin ve durumun hakkında kesin bilgi için lütfen ehil bir din görevlisine/âlime danış.</p>
+      </div>
+
+      <h2>4. Abonelikler ve ödemeler</h2>
+      <ul>
+        <li>Premium özellikler aylık, yıllık veya ömürlük paketlerle sunulur.</li>
+        <li>Aylık ve yıllık abonelikler <strong>otomatik yenilenir</strong>; dönem bitmeden en az 24 saat önce iptal etmezsen Google hesabından ücret alınır.</li>
+        <li><strong>3 günlük ücretsiz deneme</strong> sunulabilir; deneme bitmeden iptal etmezsen seçtiğin paket ücretlendirilir.</li>
+        <li>Abonelikleri istediğin zaman <strong>Google Play &gt; Abonelikler</strong> üzerinden yönetebilir veya iptal edebilirsin.</li>
+        <li>Tüm ödemeler Google Play tarafından işlenir; iadeler Google Play’in politikalarına tabidir.</li>
+      </ul>
+
+      <h2>5. Sorumluluğun sınırlandırılması</h2>
+      <p>Uygulama “olduğu gibi” sunulur. Bildirimlerin cihaz/işletim sistemi ayarlarına bağlı olarak gecikebileceğini veya gösterilemeyebileceğini kabul edersin. Uygulamanın kullanımından doğabilecek dolaylı zararlardan sorumlu tutulamayız.</p>
+
+      <h2>6. Değişiklikler</h2>
+      <p>Bu koşulları zaman zaman güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayınlanır; kullanmaya devam etmen yeni koşulları kabul ettiğin anlamına gelir.</p>
+
+      <h2>7. İletişim</h2>
+      <p>Soruların için: <a href="mailto:mehmet.koman.92@gmail.com">mehmet.koman.92@gmail.com</a></p>
+    </section>
+
+    <!-- EN -->
+    <section class="lang" data-lang="en">
+      <p>By using Falah (the “app”), you agree to the terms below. If you do not agree, please do not use the app.</p>
+
+      <h2>1. The service</h2>
+      <p>Falah is a personal worship journal that helps you track missed prayers, fasts, dhikr, routines, and notes. The app works offline and keeps your data only on your device.</p>
+
+      <h2>2. License</h2>
+      <p>We grant you a limited, non-transferable license to use the app for personal, non-commercial purposes. You may not copy, reverse-engineer, or resell the app.</p>
+
+      <h2>3. About religious content</h2>
+      <div class="note">
+        <p><strong>Important:</strong> The missed-prayer calculator and the figures in the app are for <strong>personal tracking and guidance only</strong>; they are <strong>not a fatwa or a definitive religious ruling</strong>. For certainty about your obligations, school of thought, and situation, please consult a qualified religious scholar.</p>
+      </div>
+
+      <h2>4. Subscriptions and payments</h2>
+      <ul>
+        <li>Premium features are offered as monthly, yearly, or lifetime plans.</li>
+        <li>Monthly and yearly subscriptions <strong>renew automatically</strong>; unless you cancel at least 24 hours before the period ends, your Google account is charged.</li>
+        <li>A <strong>3-day free trial</strong> may be offered; unless you cancel before it ends, the selected plan is charged.</li>
+        <li>You can manage or cancel subscriptions anytime via <strong>Google Play &gt; Subscriptions</strong>.</li>
+        <li>All payments are processed by Google Play; refunds are subject to Google Play’s policies.</li>
+      </ul>
+
+      <h2>5. Limitation of liability</h2>
+      <p>The app is provided “as is.” You acknowledge that notifications may be delayed or not shown depending on your device/OS settings. We are not liable for any indirect damages arising from use of the app.</p>
+
+      <h2>6. Changes</h2>
+      <p>We may update these terms from time to time. The current version is always published on this page; continued use means you accept the updated terms.</p>
+
+      <h2>7. Contact</h2>
+      <p>Questions: <a href="mailto:mehmet.koman.92@gmail.com">mehmet.koman.92@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <a href="privacy.html">Gizlilik Politikası · Privacy Policy</a>
+  </footer>
+</div>
+
+<script>
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('.lang').forEach(s => s.classList.toggle('on', s.dataset.lang === l));
+    document.querySelectorAll('.toggle button').forEach(b => b.setAttribute('aria-selected', b.dataset.lang === l));
+    document.getElementById('title').textContent = l === 'tr' ? 'Kullanım Koşulları' : 'Terms of Use';
+    document.getElementById('updated').textContent = l === 'tr' ? 'Son güncelleme: 11 Temmuz 2026' : 'Last updated: 11 July 2026';
+  }
+</script>
+</body>
+</html>
