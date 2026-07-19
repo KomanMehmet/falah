@@ -78,7 +78,7 @@
   </header>
 
   <h1 id="title">Gizlilik Politikası</h1>
-  <p class="updated" id="updated">Son güncelleme: 11 Temmuz 2026</p>
+  <p class="updated" id="updated">Son güncelleme: 19 Temmuz 2026</p>
 
   <div class="toggle" role="tablist" aria-label="Dil / Language">
     <button role="tab" aria-selected="true" data-lang="tr" onclick="setLang('tr')">🇹🇷 Türkçe</button>
@@ -94,10 +94,11 @@
       <p><strong>Hiçbir kişisel veri toplamıyoruz.</strong> Falah:</p>
       <ul>
         <li>Hesap açmanı gerektirmez.</li>
-        <li>İnternet bağlantısı gerektirmez.</li>
+        <li>Tüm ibadet takibi için internet bağlantısı gerektirmez.</li>
         <li>Adını, e-postanı, konumunu veya cihaz kimliğini toplamaz.</li>
-        <li>Reklam ağı, analitik veya üçüncü taraf izleme aracı içermez.</li>
+        <li>Reklam ağı, analitik veya izleme aracı içermez.</li>
       </ul>
+      <p>Tek istisna, aşağıda açıkladığımız <strong>abonelik altyapısıdır</strong>; o da yalnızca satın alma yaptıysan devreye girer.</p>
 
       <h2>Verilerin nerede saklanır?</h2>
       <p>Girdiğin tüm bilgiler (kaza sayıları, oruç, zikir, rutin, notlar, ayarlar) <strong>yalnızca senin cihazında, yerel depolamada</strong> tutulur. Bu veriler bize veya başka bir sunucuya <strong>gönderilmez</strong>. Uygulamayı silersen bu veriler de silinir.</p>
@@ -105,8 +106,16 @@
       <h2>Bildirimler</h2>
       <p>Kurduğun hatırlatıcılar cihazında yerel olarak planlanır. Bunun için bildirim iznini istiyoruz; bu izin yalnızca hatırlatma göstermek için kullanılır.</p>
 
-      <h2>Satın alımlar</h2>
-      <p>Uygulama içi abonelikler Google Play üzerinden işlenir. Ödeme bilgilerin bize ulaşmaz; Google’ın gizlilik politikası geçerlidir.</p>
+      <h2>Satın alımlar ve abonelikler</h2>
+      <p>Uygulama içi abonelikler <strong>Google Play</strong> üzerinden işlenir. Ödeme bilgilerin (kart, fatura adresi vb.) bize hiçbir zaman ulaşmaz; Google’ın gizlilik politikası geçerlidir.</p>
+      <p>Aboneliğinin hangi cihazda geçerli olduğunu takip edebilmek için <strong>RevenueCat</strong> adlı satın alma altyapısını kullanıyoruz. Bu kapsamda:</p>
+      <ul>
+        <li>Uygulama, satın alma durumunu doğrulamak için <strong>internete bağlanır</strong>.</li>
+        <li>RevenueCat, cihazın için <strong>rastgele ve anonim bir kimlik</strong> oluşturur; buna satın alma geçmişin bağlanır.</li>
+        <li>Adın, e-postan, konumun veya reklam kimliğin <strong>bu kimliğe bağlanmaz ve gönderilmez</strong>.</li>
+        <li>İbadet verilerin (kaza, oruç, zikir, rutin, notlar) bu sisteme <strong>hiçbir şekilde gönderilmez</strong>.</li>
+      </ul>
+      <p>Satın alma kaydının silinmesini istersen <a href="delete.html">veri silme sayfasından</a> talepte bulunabilirsin.</p>
 
       <h2>Çocukların gizliliği</h2>
       <p>Uygulama kişisel veri toplamadığı için her yaşa uygundur.</p>
@@ -126,10 +135,11 @@
       <p><strong>We collect no personal data.</strong> Falah:</p>
       <ul>
         <li>Does not require an account.</li>
-        <li>Does not require an internet connection.</li>
+        <li>Does not require an internet connection for any worship tracking.</li>
         <li>Does not collect your name, email, location, or device identifiers.</li>
-        <li>Contains no ad networks, analytics, or third-party tracking.</li>
+        <li>Contains no ad networks, analytics, or tracking.</li>
       </ul>
+      <p>The only exception is the <strong>subscription infrastructure</strong> described below, and it only comes into play if you make a purchase.</p>
 
       <h2>Where your data is stored</h2>
       <p>Everything you enter (prayer counts, fasts, dhikr, routines, notes, settings) is stored <strong>only on your device, in local storage.</strong> This data is <strong>never sent</strong> to us or any server. Uninstalling the app deletes this data.</p>
@@ -137,8 +147,16 @@
       <h2>Notifications</h2>
       <p>Reminders you set are scheduled locally on your device. We request notification permission solely to show these reminders.</p>
 
-      <h2>Purchases</h2>
-      <p>In-app subscriptions are processed through Google Play. Your payment details do not reach us; Google’s privacy policy applies.</p>
+      <h2>Purchases and subscriptions</h2>
+      <p>In-app subscriptions are processed through <strong>Google Play</strong>. Your payment details (card, billing address, etc.) never reach us; Google’s privacy policy applies.</p>
+      <p>To keep track of which device your subscription applies to, we use a purchase infrastructure called <strong>RevenueCat</strong>. In this context:</p>
+      <ul>
+        <li>The app <strong>connects to the internet</strong> to verify purchase status.</li>
+        <li>RevenueCat generates a <strong>random, anonymous identifier</strong> for your device, which your purchase history is tied to.</li>
+        <li>Your name, email, location, and advertising ID are <strong>never linked to that identifier or sent</strong>.</li>
+        <li>Your worship data (prayers, fasts, dhikr, routines, notes) is <strong>never sent</strong> to this system.</li>
+      </ul>
+      <p>If you want your purchase record deleted, you can request it on the <a href="delete.html">data deletion page</a>.</p>
 
       <h2>Children’s privacy</h2>
       <p>Because the app collects no personal data, it is suitable for all ages.</p>
@@ -162,7 +180,7 @@
     document.querySelectorAll('.lang').forEach(s => s.classList.toggle('on', s.dataset.lang === l));
     document.querySelectorAll('.toggle button').forEach(b => b.setAttribute('aria-selected', b.dataset.lang === l));
     document.getElementById('title').textContent = l === 'tr' ? 'Gizlilik Politikası' : 'Privacy Policy';
-    document.getElementById('updated').textContent = l === 'tr' ? 'Son güncelleme: 11 Temmuz 2026' : 'Last updated: 11 July 2026';
+    document.getElementById('updated').textContent = l === 'tr' ? 'Son güncelleme: 19 Temmuz 2026' : 'Last updated: 19 July 2026';
   }
 </script>
 </body>
